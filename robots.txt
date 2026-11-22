@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jeetsinhgohil.github.io/Car/sitemap.xml
