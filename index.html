@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Service</title>
-    <meta http-equiv="refresh" content="0; url=car%20service.pdf">
-    <script>
-        window.location.replace("car%20service.pdf");
-    </script>
+    <meta name="description" content="Car service guide and documentation.">
+    <link rel="canonical" href="https://jeetsinhgohil.github.io/Car/">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .pdf-viewer {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+        .fallback {
+            padding: 1.5rem;
+            text-align: center;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to <a href="car%20service.pdf">car service.pdf</a>...</p>
+    <object class="pdf-viewer" data="car%20service.pdf" type="application/pdf">
+        <div class="fallback">
+            <a href="car%20service.pdf">Open Car Service PDF</a>
+        </div>
+    </object>
 </body>
 </html>
